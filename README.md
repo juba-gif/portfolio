@@ -1,16 +1,68 @@
-# React + Vite
+# Welcome to My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal portfolio. It showcases
+my work, skills, and experience in a responsive web application.
 
-Currently, two official plugins are available:
+## Built With
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [React](https://react.dev/) — builds the user interface
+- [Vite](https://vite.dev/) — provides the development server and production build
+- [Tailwind CSS](https://tailwindcss.com/) — handles utility-first styling
+- [ESLint](https://eslint.org/) — checks the code for common issues
 
-## React Compiler
+## Prerequisites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Before running the project, install:
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) 20.19 or later
+- npm (included with Node.js)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Dependencies
+
+The main application dependencies are:
+
+- `react`
+- `react-dom`
+- `tailwindcss`
+- `@tailwindcss/vite`
+
+Development tools such as Vite, ESLint, and the React Vite plugin are installed
+automatically with the rest of the packages.
+
+## Running the Application
+
+1. Clone the repository and move into the project directory:
+
+   ```bash
+   git clone <repository-url>
+   cd portfolio
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the local URL shown in the terminal, usually
+   `http://localhost:5173`.
+
+## Other Commands
+
+```bash
+npm run build    # Create a production build
+npm run preview  # Preview the production build locally
+npm run lint     # Check the code with ESLint
+```
+
+## Feedback and Suggestions
+
+I am always looking for ways to grow and improve this portfolio. If you have
+suggestions, ideas, or constructive feedback, please feel free to open an issue
+or get in touch. I would be happy to hear from you!

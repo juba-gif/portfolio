@@ -1,1 +1,13 @@
 @import "tailwindcss";
+@theme {
+  /* color */
+  --color-background: #f1dec4;
+  --color-clay-red: #bd4444;
+  --color-warm-sand: #DFC9A7;
+
+  /* border radius */
+  --radius-pill: 999999px;
+  --radius-card: 20px;
+
+
+}

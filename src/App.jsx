@@ -1,9 +1,11 @@
+import Header from "./components/layout/Header";
+
 function App() {
   return (
-    <>
-      <h1>This will be my portfolio</h1>
-    </>
+    <div className="min-h-screen bg-background">
+      <Header />
+    </div>
   );
 }
 
-export default App
+export default App;
