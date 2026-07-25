@@ -1,10 +1,13 @@
-import Header from "./components/layout/Header";
-
+import MainLayout from "./components/layout/MainLayout";
+import Hero from "./components/Hero";
 function App() {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-    </div>
+    <>
+      <MainLayout>
+        <Hero />
+    
+      </MainLayout>
+    </>
   );
 }
 
