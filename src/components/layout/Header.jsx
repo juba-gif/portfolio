@@ -1,6 +1,5 @@
 import CV from "/docs/newCv_march_mojuba.pdf";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { ArrowDownToLine } from "lucide-react";
 function Header() {
   const navigationMenu = ["About", "Stack", "Projects", "Contact"];
 
@@ -35,7 +34,7 @@ function Header() {
           <span>Download CV</span>
 
           <span>
-            <FontAwesomeIcon icon={faArrowDown} className="text-xs" />
+            <ArrowDownToLine size={16} aria-hidden="true" />
           </span>
         </a>
       </div>

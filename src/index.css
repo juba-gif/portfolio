@@ -19,12 +19,15 @@
   /* font */
   --font-manrope: "Manrope", sans-serif;
   --font-space-grotesk: "Space Grotesk", sans-serif;
+
+  /* animation */
+  --animate-wave: wave 1.8s ease-in-out infinite;
 }
 @layer components {
   /* Hero Name */
   .text-hero {
     @apply font-space-grotesk font-semibold tracking-tight leading-[0.9]
-           text-[clamp(3.5rem,9vw,8rem)];
+           text-[clamp(3.5rem,8vw,7.5rem)];
   }
 
   /* Section Heading */
@@ -73,5 +76,55 @@
   /* Form Inputs */
   .text-input {
     @apply font-sans text-base font-normal;
+  }
+}
+
+.hero-float {
+  animation: hero-float 5s ease-in-out infinite;
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-0.75rem);
+  }
+}
+
+@keyframes wave {
+  0%,
+  60%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(18deg);
+  }
+
+  20% {
+    transform: rotate(-10deg);
+  }
+
+  30% {
+    transform: rotate(16deg);
+  }
+
+  40% {
+    transform: rotate(-6deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-float,
+  .animate-wave {
+    animation: none;
   }
 }
