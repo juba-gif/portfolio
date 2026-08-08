@@ -1,6 +1,6 @@
 import avatar from "../assets/images/avatar-image.webp";
 import CV from "/docs/newCv_march_mojuba.pdf";
-import { ArrowDownToLine, ArrowRight, Mail } from "lucide-react";
+import { ArrowDownToLine, ArrowRight, Mail, ArrowDown } from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 function Hero() {
@@ -23,7 +23,7 @@ function Hero() {
   ];
 
   return (
-    <section className="flex min-h-svh items-center pt-17">
+    <section id="home" className="flex min-h-svh items-center pt-17">
       <div className="mx-auto w-full px-4 py-10 flex justify-center">
         <div className="flex flex-col gap-5 max-w-[1600px] w-full">
           <div className="grid grid-cols-2 items-center gap-16 ">
@@ -39,7 +39,7 @@ function Hero() {
                 </span>
               </p>
 
-              <div className="ml-[-0.06em] mt-4 text-hero uppercase">
+              <div className="mt-2 text-hero uppercase ">
                 <h1>Mojuba</h1>
                 <h1 className="text-clay-red">Oladuntoye</h1>
               </div>
@@ -82,7 +82,35 @@ function Hero() {
                 aria-hidden="true"
                 className="absolute -bottom-4 left-1/2 z-0 h-12 w-[82%] -translate-x-1/2 rounded-full bg-warm-sand opacity-90 blur-lg"
               />
-              <div className="hero-float">
+              <div className="hero-float relative">
+                <span
+                  aria-hidden="true"
+                  className="image-section-icons float-1 top-[10%] left-[-2%]"
+                >
+                  JS
+                </span>
+
+                <span
+                  aria-hidden="true"
+                  className="image-section-icons float-2 bottom-[18%] left-[-6%]"
+                >
+                  {"</>"}
+                </span>
+
+                <span
+                  aria-hidden="true"
+                  className="image-section-icons float-3 top-[5%] right-[1%]"
+                >
+                  {"{ }"}
+                </span>
+
+                <span
+                  aria-hidden="true"
+                  className="image-section-icons float-4 bottom-[14%] right-[-5%]"
+                >
+                  TS
+                </span>
+
                 <div className="relative z-10 overflow-clip rounded-b-[50%]">
                   <div
                     aria-hidden="true"
@@ -119,6 +147,24 @@ function Hero() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
+        <a
+          href="#about"
+          className="group flex flex-col items-center gap-2 text-black/55 transition-colors hover:text-clay-red"
+          aria-label="Scroll to About section"
+        >
+          <span className="text-xs font-semibold uppercase tracking-[0.18em]">
+            Scroll to Explore
+          </span>
+
+          <ArrowDown
+            size={18}
+            aria-hidden="true"
+            className="animate-bounce transition-transform group-hover:translate-y-1"
+          />
+        </a>
       </div>
     </section>
   );
