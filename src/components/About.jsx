@@ -111,7 +111,7 @@ function About() {
                     <div key={item.id} className="flex min-w-0 flex-col">
                       {/* Step number */}
                       <span className="mb-4 font-manrope text-xs font-bold tracking-wider text-clay-red xl:mb-5 xl:text-sm">
-                        {String(item.id).padStart(2, "0")}
+                        0{item.id}
                       </span>
 
                       {/* Icon + connecting line */}
