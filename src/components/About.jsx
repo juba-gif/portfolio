@@ -86,7 +86,7 @@ function About() {
               <p className="mt-6 font-manrope text-sm leading-7 text-black/70 sm:text-base">
                 I'm a curious problem solver who enjoys building things that
                 make life easier. I love understanding how ideas turn into real
-                products people use every day. Always learning, always building.
+                products people use every day. Always learning, always building. The goal is to become a cracked engineer amongst other things.
               </p>
 
               <div className="mt-8 inline-flex flex-wrap items-center gap-x-5 gap-y-2 font-manrope text-xs font-semibold uppercase tracking-wide text-black/70">
