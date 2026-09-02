@@ -6,8 +6,10 @@ import {
 } from "lucide-react";
 import portfolioImage from "../assets/images/portfolio-screenshot.webp";
 import { FaGithub } from "react-icons/fa";
+import { useState } from "react";
 
 function Projects() {
+  const [projectNumber, setProjectNumber] = useState(1);
   const projects = [
     {
       title: "Portfolio",
@@ -54,7 +56,7 @@ function Projects() {
         </div>
 
         {/* projects dashboard */}
-        <div className="w-full h-180 rounded-3xl bg-warm-sand/50 border-warm-sand border-2 p-4 grid grid-cols-[minmax(0,7fr)_minmax(0,3fr)] gap-15 ">
+        <div className="w-full h-auto rounded-3xl bg-warm-sand/50 border-warm-sand border-2 p-4 grid grid-cols-[minmax(0,7fr)_minmax(0,3fr)] gap-15 mt-8">
           {projects.map((project) => {
             return (
               <>
@@ -65,21 +67,23 @@ function Projects() {
                   className="shadow-lg rounded-3xl"
                 />
 
-                <div>
-                  <div>
-                    <span className="uppercase flex gap-2 items-center text-clay-red font-bold">
-                      <span className="inline-block h-3 w-3 rounded-full bg-clay-red"></span>
+                <div className="flex flex-col">
+                  <div className="pb-5">
+                    <span className="uppercase flex gap-1 items-center text-clay-red font-bold text-xs">
+                      <span className="inline-block h-2 w-2 rounded-full bg-clay-red "></span>
                       Featured Project
                     </span>
-                    <div>
-                      <h3 className="font-space-grotesk text-[clamp(2rem,2.2vw,2.25rem)] font-bold uppercase leading-none tracking-tight">
-                        {project.title}
-                      </h3>
-                      <span className="font-black text-xs">
-                        {project.subHeading}
-                      </span>
+                    <div className="my-5  flex flex-col gap-2.5">
+                      <div>
+                        <h3 className="font-space-grotesk text-[clamp(2rem,2.2vw,2.25rem)] font-bold uppercase leading-none tracking-tight">
+                          {project.title}
+                        </h3>
+                        <span className="font-black text-xs">
+                          {project.subHeading}
+                        </span>
+                      </div>
+                      <p className="text-xs">{project.description}</p>
                     </div>
-                    <p className="text-xs">{project.description}</p>
                     <ul className="flex gap-2">
                       {project.stack.map((element) => {
                         return (
@@ -93,43 +97,48 @@ function Projects() {
                       })}
                     </ul>
                   </div>
-                  <span className="inline-block w-full h-1 bg-warm-sand"></span>
-                  {/* engineering highlights */}
-                  <div>
-                    <span>Engineering Highlights</span>
-                    <ul>
-                      {project.highlights.map((element) => {
-                        return (
-                          <>
-                            <div className="flex gap-2 items-center">
-                              <span className="inline-flex h-3 w-3 rounded-full bg-clay-red items-center justify-center">
-                                <Check size={10} className="text-warm-sand" />
-                              </span>
-                              <li key={element}>{element}</li>
-                            </div>
-                          </>
-                        );
-                      })}
-                    </ul>
-                  </div>
+                  {/* horizontal divider */}
+                  <span className="inline-block w-full h-0.5 bg-warm-sand"></span>
 
-                  {/* links */}
-                  <div className="flex gap-5">
-                    <a
-                      href={project.liveDemo}
-                      className="bg-clay-red inline-flex gap-2 items-center px-5 py-3 rounded-lg text-sm font-medium text-white"
-                    >
-                      Live Demo
-                      <SquareArrowOutUpRight size={15} />
-                    </a>
-                    <a
-                      href={project.githubLink}
-                      target="_blank"
-                      className=" px-5 py-3 rounded-lg text-sm font-medium border border-clay-red inline-flex gap-2 items-center justify-center"
-                    >
-                      GitHub
-                      <FaGithub />
-                    </a>
+                  <div className="flex flex-col justify-between flex-1">
+                    {/* engineering highlights */}
+                    <div className="pt-5">
+                      <span className="font-black">Engineering Highlights</span>
+                      <ul className="space-y-2 mt-3">
+                        {project.highlights.map((element) => {
+                          return (
+                            <>
+                              <div className="flex gap-2 items-center">
+                                <span className="inline-flex h-3 w-3 rounded-full bg-clay-red items-center justify-center">
+                                  <Check size={10} className="text-warm-sand" />
+                                </span>
+                                <li key={element}>{element}</li>
+                              </div>
+                            </>
+                          );
+                        })}
+                      </ul>
+                    </div>
+
+                    {/* links */}
+                    <div className="flex gap-5">
+                      <a
+                        href={project.liveDemo}
+                        target="_blank"
+                        className="bg-clay-red inline-flex gap-2 items-center px-5 py-3 rounded-lg text-sm font-medium text-white"
+                      >
+                        Live Demo
+                        <SquareArrowOutUpRight size={15} />
+                      </a>
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        className=" px-5 py-3 rounded-lg text-sm font-medium border border-clay-red inline-flex gap-2 items-center justify-center"
+                      >
+                        GitHub
+                        <FaGithub />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </>
