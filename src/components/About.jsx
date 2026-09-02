@@ -1,36 +1,40 @@
-import { FiSearch, FiSliders, FiTrendingUp } from "react-icons/fi";
-import { FaCode } from "react-icons/fa6";
-import { SiCrunchyroll } from "react-icons/si";
-import { IoGameControllerOutline, IoCarSportOutline } from "react-icons/io5";
-import { GiSoccerBall } from "react-icons/gi";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import {
+  CarFront,
+  Code2,
+  Gamepad2,
+  MapPin,
+  Search,
+  SlidersHorizontal,
+  TrendingUp,
+} from "lucide-react";
+import { CrunchyrollIcon, FootballIcon } from "./icons/BrandIcons";
 
 function About() {
   const ideology = [
     {
       id: 1,
-      icon: FiSearch,
+      icon: Search,
       title: "Understand",
       text: "Start with the problem, not the implementation.",
       footer: "Problem & context",
     },
     {
       id: 2,
-      icon: FaCode,
+      icon: Code2,
       title: "Build",
       text: "Turn the solution into something simple, reliable and functional.",
       footer: "Solution & execution",
     },
     {
       id: 3,
-      icon: FiSliders,
+      icon: SlidersHorizontal,
       title: "Refine",
       text: "Improve the code, performance and user experience continuously.",
       footer: "Quality & UX",
     },
     {
       id: 4,
-      icon: FiTrendingUp,
+      icon: TrendingUp,
       title: "Grow",
       text: "Design with change and future requirements in mind.",
       footer: "Scalability & change",
@@ -40,25 +44,25 @@ function About() {
   const hobbies = [
     {
       id: 1,
-      icon: SiCrunchyroll,
+      icon: CrunchyrollIcon,
       title: "Anime",
       text: "My top 3: One Piece, Naruto and Gurren Lagann, in that order.",
     },
     {
       id: 2,
-      icon: IoGameControllerOutline,
+      icon: Gamepad2,
       title: "Gaming",
       text: "I do indulge in some form of gaming",
     },
     {
       id: 3,
-      icon: IoCarSportOutline,
+      icon: CarFront,
       title: "Cars",
       text: "BMW is king",
     },
     {
       id: 4,
-      icon: GiSoccerBall,
+      icon: FootballIcon,
       title: "Football",
       text: "A Manchester United fan through the good and the very questionable.",
     },
@@ -91,7 +95,7 @@ function About() {
 
               <div className="mt-8 inline-flex flex-wrap items-center gap-x-5 gap-y-2 font-manrope text-xs font-semibold uppercase tracking-wide text-black/70">
                 <p className="flex items-center gap-1 rounded-pill bg-warm-sand px-2 py-2">
-                  <FaMapMarkerAlt className="text-clay-red" />
+                  <MapPin className="size-4 text-clay-red" />
                   Oyo, Nigeria
                 </p>
                 <p className="flex items-center gap-1 rounded-pill bg-warm-sand px-2 py-2">

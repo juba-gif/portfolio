@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ArrowUp, Check, Copy, Mail } from "lucide-react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { GithubIcon, LinkedinIcon } from "./icons/BrandIcons";
 
 function Contact() {
   const email = "oladuntoyemojuba@gmail.com";
@@ -85,7 +85,7 @@ function Contact() {
                 aria-label="Visit my LinkedIn profile"
                 className="grid size-11 place-items-center rounded-lg border border-background/30 transition-colors hover:bg-background hover:text-clay-red"
               >
-                <FaLinkedinIn size={17} aria-hidden="true" />
+                <LinkedinIcon size={17} />
               </a>
 
               <a
@@ -95,7 +95,7 @@ function Contact() {
                 aria-label="Visit my GitHub profile"
                 className="grid size-11 place-items-center rounded-lg border border-background/30 transition-colors hover:bg-background hover:text-clay-red"
               >
-                <FaGithub size={18} aria-hidden="true" />
+                <GithubIcon size={18} />
               </a>
             </div>
 

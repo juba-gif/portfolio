@@ -5,8 +5,8 @@ import {
   SquareArrowOutUpRight,
 } from "lucide-react";
 import portfolioImage from "../assets/images/portfolio-screenshot.webp";
-import { FaGithub } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
+import { GithubIcon } from "./icons/BrandIcons";
 
 function Projects() {
   const [activeProjectIndex, setActiveProjectIndex] = useState(0);
@@ -179,7 +179,7 @@ function Projects() {
                   className="inline-flex items-center justify-center gap-2 rounded-lg border border-clay-red px-5 py-3 text-sm font-medium"
                 >
                   GitHub
-                  <FaGithub />
+                  <GithubIcon />
                 </a>
               </div>
             </div>
