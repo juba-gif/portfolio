@@ -16,7 +16,19 @@ function Projects() {
       subHeading: "My Personal Portfolio",
       image: portfolioImage,
       description: "A modern fully responeive personal portfolio",
-      stack: ["React", "Tailwind"],
+      stack: [
+        "React",
+        "Tailwind",
+        "React",
+        "Tailwind",
+        "React",
+        "Tailwind",
+        "React",
+        "Tailwind",
+        ,
+        "React",
+        "Tailwind",
+      ],
       highlights: [
         "Responsive design",
         "Data-driven rendering",
@@ -60,12 +72,14 @@ function Projects() {
           {projects.map((project) => {
             return (
               <>
-                <img
-                  src={project.image}
-                  alt=""
-                  srcset=""
-                  className="shadow-lg rounded-3xl"
-                />
+                <div>
+                  <img
+                    src={project.image}
+                    alt=""
+                    srcset=""
+                    className="shadow-lg rounded-3xl w-full h-auto object-cover object-center"
+                  />
+                </div>
 
                 <div className="flex flex-col">
                   <div className="pb-5">
@@ -84,7 +98,7 @@ function Projects() {
                       </div>
                       <p className="text-xs">{project.description}</p>
                     </div>
-                    <ul className="flex gap-2">
+                    <ul className="flex gap-2 flex-wrap">
                       {project.stack.map((element) => {
                         return (
                           <li
