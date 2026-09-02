@@ -71,7 +71,7 @@ function Projects() {
         className="mx-auto flex w-full max-w-[1600px] flex-col px-4 py-24 sm:px-6 lg:px-8 lg:py-32"
       >
         <span className="mb-12 font-manrope text-xs font-bold uppercase tracking-[0.18em] text-clay-red lg:mb-16">
-          03 / Projects
+          04 / Projects
         </span>
         {/* projects section header */}
         <div className=" flex justify-between items-center">
