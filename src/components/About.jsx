@@ -48,7 +48,7 @@ function About() {
       id: 2,
       icon: IoGameControllerOutline,
       title: "Gaming",
-      text: "I do indulge in some form of gamimg/",
+      text: "I do indulge in some form of gaming",
     },
     {
       id: 3,
