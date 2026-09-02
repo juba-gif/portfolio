@@ -1,19 +1,19 @@
 import avatar from "../assets/images/avatar-image.webp";
 import CV from "/docs/newCv_march_mojuba.pdf";
 import { ArrowDownToLine, ArrowRight, Mail, ArrowDown } from "lucide-react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { GithubIcon, LinkedinIcon } from "./icons/BrandIcons";
 
 function Hero() {
   const socials = [
     {
       name: "GitHub",
       href: "https://github.com/juba-gif",
-      icon: FaGithub,
+      icon: GithubIcon,
     },
     {
       name: "LinkedIn",
       href: "https://www.linkedin.com/in/mojuba-oladuntoye-a02aa819a/",
-      icon: FaLinkedinIn,
+      icon: LinkedinIcon,
     },
     {
       name: "Email",
