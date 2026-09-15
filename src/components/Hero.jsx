@@ -25,7 +25,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-svh items-center overflow-x-clip pt-12 md:pt-17"
+      className="relative flex min-h-svh items-center overflow-x-clip  md:pt-17"
     >
       <div className="mx-auto flex w-full justify-center px-4 py-6 sm:px-6 sm:py-10 md:py-12 lg:px-8 lg:py-16">
         <div className="flex w-full max-w-[1600px] flex-col gap-8 lg:gap-5">

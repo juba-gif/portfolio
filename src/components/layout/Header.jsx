@@ -44,7 +44,7 @@ function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 z-50 box-border flex h-12 w-full items-center justify-between border-b px-3 py-1.5 font-manrope font-semibold transition-[border-color,background-color,box-shadow] duration-300 md:h-17 md:px-2.5 md:py-3 ${
+        className={`relative z-40 box-border flex h-12 w-full items-center justify-between border-b px-3 py-1.5 font-manrope font-semibold transition-[border-color,background-color,box-shadow] duration-300 md:fixed md:top-0 md:z-50 md:h-17 md:px-2.5 md:py-3 ${
           isScrolled
             ? "border-clay-red/20 bg-background/95 shadow-[0_6px_20px_rgba(43,43,43,0.08)] backdrop-blur-md"
             : "border-transparent bg-background shadow-none"
@@ -89,18 +89,18 @@ function Header() {
             </span>
           </a>
         </div>
-
-        <button
-          type="button"
-          aria-label="Open navigation menu"
-          aria-controls="mobile-navigation"
-          aria-expanded={isMobileNavOpen}
-          className="grid size-9 place-items-center rounded-full border border-clay-red/25 bg-warm-sand/60 transition-colors hover:border-clay-red hover:bg-warm-sand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-clay-red md:hidden"
-          onClick={() => setIsMobileNavOpen((isOpen) => !isOpen)}
-        >
-          <Menu size={19} aria-hidden="true" />
-        </button>
       </header>
+
+      <button
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="mobile-navigation"
+        aria-expanded={isMobileNavOpen}
+        className="fixed right-3 top-1.5 z-50 grid size-9 place-items-center rounded-full border border-clay-red/25 bg-warm-sand/90 shadow-sm backdrop-blur-sm transition-colors hover:border-clay-red hover:bg-warm-sand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-clay-red md:hidden"
+        onClick={() => setIsMobileNavOpen((isOpen) => !isOpen)}
+      >
+        <Menu size={19} aria-hidden="true" />
+      </button>
 
       <MobileNav
         isMobileOpen={isMobileNavOpen}
