@@ -23,44 +23,47 @@ function Hero() {
   ];
 
   return (
-    <section id="home" className="flex min-h-svh items-center pt-17">
-      <div className="mx-auto w-full px-4 py-10 flex justify-center">
-        <div className="flex flex-col gap-5 max-w-[1600px] w-full">
-          <div className="grid grid-cols-2 items-center gap-16 ">
+    <section
+      id="home"
+      className="relative flex min-h-svh items-center overflow-x-clip pt-17"
+    >
+      <div className="mx-auto flex w-full justify-center px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+        <div className="flex w-full max-w-[1600px] flex-col gap-8 lg:gap-5">
+          <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-[minmax(0,1.08fr)_minmax(16rem,0.92fr)] md:gap-8 lg:gap-16">
             {/* text section */}
-            <div className="w-full max-w-3xl">
+            <div className="mx-auto w-full max-w-3xl text-center md:mx-0 md:text-left">
               <p className="text-sm font-medium">
                 Hello, I'm
                 <span
-                  className="inline-block origin-[70%_70%] animate-wave"
+                  className="ml-1 inline-block origin-[70%_70%] animate-wave"
                   aria-hidden="true"
                 >
                   👋🏾
                 </span>
               </p>
 
-              <div className="mt-2 text-hero uppercase ">
+              <div className="mt-2 text-hero text-[clamp(2.7rem,13vw,4.5rem)] uppercase sm:text-[clamp(3.5rem,10vw,5rem)] md:text-[clamp(3rem,6vw,5.25rem)] lg:text-[clamp(4rem,7vw,7.5rem)]">
                 <h1>Mojuba</h1>
                 <h1 className="text-clay-red">Oladuntoye</h1>
               </div>
 
-              <div className="mt-5 flex items-center gap-2">
-                <p className="text-sm font-semibold uppercase tracking-[0.14em]">
+              <div className="mt-5 flex items-center justify-center gap-2 md:justify-start">
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] sm:text-sm sm:tracking-[0.14em]">
                   A full-stack JavaScript developer
                 </p>
                 <span className="block size-1.5 shrink-0 rounded-full bg-clay-red" />
               </div>
 
-              <p className="mt-3 max-w-md leading-7 text-black/70">
+              <p className="mx-auto mt-3 max-w-md leading-7 text-black/70 md:mx-0">
                 I build modern, scalable web applications focused on performance
                 and thoughtful UX.
               </p>
 
               {/* cta buttons */}
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-6 grid grid-cols-1 gap-3 sm:flex sm:flex-wrap sm:justify-center md:justify-start">
                 <a
                   href="#projects"
-                  className="inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-clay-red px-4 text-sm font-semibold text-white transition-colors hover:bg-clay-red/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-clay-red"
+                  className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-clay-red px-4 text-sm font-semibold text-white transition-colors hover:bg-clay-red/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-clay-red sm:w-auto"
                 >
                   View Projects
                   <ArrowRight size={18} aria-hidden="true" />
@@ -68,7 +71,7 @@ function Hero() {
                 <a
                   href={CV}
                   download={CV}
-                  className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-clay-red px-4 text-sm font-semibold transition-colors hover:bg-clay-red hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-clay-red"
+                  className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg border border-clay-red px-4 text-sm font-semibold transition-colors hover:bg-clay-red hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-clay-red sm:w-auto"
                 >
                   Download CV
                   <ArrowDownToLine size={18} aria-hidden="true" />
@@ -77,36 +80,36 @@ function Hero() {
             </div>
 
             {/* hero image */}
-            <div className="relative isolate shrink-0 flex justify-self-end">
+            <div className="relative isolate mx-auto flex w-full max-w-[18rem] shrink-0 justify-center sm:max-w-[22rem] md:mx-0 md:max-w-[24rem] md:justify-self-end lg:max-w-[30rem]">
               <div
                 aria-hidden="true"
                 className="absolute -bottom-4 left-1/2 z-0 h-12 w-[82%] -translate-x-1/2 rounded-full bg-warm-sand opacity-90 blur-lg"
               />
-              <div className="hero-float relative">
+              <div className="hero-float relative w-full">
                 <span
                   aria-hidden="true"
-                  className="image-section-icons float-1 top-[10%] left-[-2%]"
+                  className="image-section-icons float-1 left-0 top-[10%] sm:left-[-2%]"
                 >
                   JS
                 </span>
 
                 <span
                   aria-hidden="true"
-                  className="image-section-icons float-2 bottom-[18%] left-[-6%]"
+                  className="image-section-icons float-2 bottom-[18%] left-[-2%] sm:left-[-6%]"
                 >
                   {"</>"}
                 </span>
 
                 <span
                   aria-hidden="true"
-                  className="image-section-icons float-3 top-[5%] right-[1%]"
+                  className="image-section-icons float-3 right-0 top-[5%] sm:right-[1%]"
                 >
                   {"{ }"}
                 </span>
 
                 <span
                   aria-hidden="true"
-                  className="image-section-icons float-4 bottom-[14%] right-[-5%]"
+                  className="image-section-icons float-4 bottom-[14%] right-[-2%] sm:right-[-5%]"
                 >
                   TS
                 </span>
@@ -118,15 +121,15 @@ function Hero() {
                   />
                   <img
                     src={avatar}
-                    alt="Portrait"
-                    className="relative z-10 block w-[clamp(14rem,65vw,30rem)] lg:w-[clamp(20rem,32vw,30rem)]"
+                    alt="Portrait of Mojuba Oladuntoye"
+                    className="relative z-10 block w-full"
                   />
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="justify-self-start lg:col-start-1">
+          <div className="flex flex-col items-center md:items-start">
             <p className="text-label text-black/60">Connect with me</p>
             <div className="mt-3 flex gap-3">
               {socials.map((social) => {
@@ -149,7 +152,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 lg:block">
         <a
           href="#about"
           className="group flex flex-col items-center gap-2 text-black/55 transition-colors hover:text-clay-red"
