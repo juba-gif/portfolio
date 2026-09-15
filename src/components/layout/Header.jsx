@@ -44,7 +44,7 @@ function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 z-50 flex h-17 w-full items-center justify-between box-border border-b px-2.5 py-3 font-manrope font-semibold transition-[border-color,background-color,box-shadow] duration-300 ${
+        className={`fixed top-0 z-50 box-border flex h-12 w-full items-center justify-between border-b px-3 py-1.5 font-manrope font-semibold transition-[border-color,background-color,box-shadow] duration-300 md:h-17 md:px-2.5 md:py-3 ${
           isScrolled
             ? "border-clay-red/20 bg-background/95 shadow-[0_6px_20px_rgba(43,43,43,0.08)] backdrop-blur-md"
             : "border-transparent bg-background shadow-none"
@@ -52,11 +52,13 @@ function Header() {
       >
         {/* logo */}
         <div>
-          <span className="capitalize p-2.5 text-sm bg-clay-red text-white rounded-full">
-            <a href="#home" aria-label="Go to the top of the page">
-              MO
-            </a>
-          </span>
+          <a
+            href="#home"
+            aria-label="Go to the top of the page"
+            className="grid size-8 place-items-center rounded-full bg-clay-red text-xs text-white md:size-10 md:text-sm"
+          >
+            MO
+          </a>
         </div>
         {/* navigation menu */}
         <nav className="px-3 py-1.5 bg-warm-sand rounded-pill hidden md:block">
@@ -93,10 +95,10 @@ function Header() {
           aria-label="Open navigation menu"
           aria-controls="mobile-navigation"
           aria-expanded={isMobileNavOpen}
-          className="grid size-10 place-items-center rounded-full border border-clay-red/25 bg-warm-sand/60 transition-colors hover:border-clay-red hover:bg-warm-sand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-clay-red md:hidden"
+          className="grid size-9 place-items-center rounded-full border border-clay-red/25 bg-warm-sand/60 transition-colors hover:border-clay-red hover:bg-warm-sand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-clay-red md:hidden"
           onClick={() => setIsMobileNavOpen((isOpen) => !isOpen)}
         >
-          <Menu size={21} aria-hidden="true" />
+          <Menu size={19} aria-hidden="true" />
         </button>
       </header>
 
