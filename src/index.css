@@ -84,7 +84,7 @@
   }
 
   .image-section-icons {
-    @apply absolute z-20 flex items-center justify-center w-12 h-12 rounded-2xl bg-warm-sand shadow-md font-space-grotesk font-bold text-lg text-[#2B2B2B] transition-transform duration-300 cursor-default;
+    @apply absolute z-20 flex size-10 cursor-default items-center justify-center rounded-xl bg-warm-sand font-space-grotesk text-sm font-bold text-[#2B2B2B] shadow-md transition-transform duration-300 sm:size-12 sm:rounded-2xl sm:text-lg;
   }
 }
 
