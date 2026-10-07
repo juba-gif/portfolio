@@ -1,4 +1,4 @@
-import CV from "/docs/newCv_march_mojuba.pdf";
+import CV from "/docs/MOJUBA_MOFOLUWASHO_OLADUNTOYE_CV_2.0.pdf";
 import { ArrowDownToLine, Menu } from "lucide-react";
 import { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";

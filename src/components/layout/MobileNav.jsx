@@ -1,5 +1,5 @@
 import { ArrowDownToLine, ArrowRight, X } from "lucide-react";
-import CV from "/docs/newCv_march_mojuba.pdf";
+import CV from "/docs/MOJUBA_MOFOLUWASHO_OLADUNTOYE_CV_2.0.pdf";
 
 export default function MobileNav({ isMobileOpen, links, setMobileNav }) {
   const closeMenu = () => setMobileNav(false);

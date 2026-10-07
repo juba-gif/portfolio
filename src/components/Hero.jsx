@@ -1,5 +1,5 @@
 import avatar from "../assets/images/avatar-image.webp";
-import CV from "/docs/newCv_march_mojuba.pdf";
+import CV from "/docs/MOJUBA_MOFOLUWASHO_OLADUNTOYE_CV_2.0.pdf";
 import { ArrowDownToLine, ArrowRight, Mail, ArrowDown } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons/BrandIcons";
 
