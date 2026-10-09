@@ -22,7 +22,7 @@ function Contact() {
       className="mx-auto w-full max-w-[1600px] px-4 pb-8 pt-24 sm:px-6 lg:px-8 lg:pt-32"
     >
       <span className="mb-12 block font-manrope text-xs font-bold uppercase tracking-[0.18em] text-clay-red lg:mb-16">
-        05 / Contact
+        04 / Contact
       </span>
 
       <div className="rounded-3xl bg-clay-red px-6 py-10 text-background sm:px-10 sm:py-12 lg:px-14 lg:py-16">
